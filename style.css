@@ -1,0 +1,130 @@
+:root {
+    --bg-primary: #3d5a6c;
+    --bg-secondary: #f2a684;
+    --text-primary: #f7f6f1;
+    --text-secondary: #2a2b2a;
+    --accent: #d9a443;
+    --bg-reverse: black;
+    --text-reverse: white;
+}
+
+body.dark-theme {
+    --bg-primary: #02192e;
+    --bg-secondary: #154672;
+    --text-primary: #cfe2f3;
+    --text-secondary: #abc5dc;
+    --accent: #4d8cc5;
+    --bg-reverse: white;
+    --text-reverse: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--bg-primary);
+    padding: 3rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+
+header nav {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+header button {
+    padding: 0.3rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    transition-duration: 0.5s;
+    margin-left: 2rem;
+}
+
+header button:hover {
+    background-color: var(--accent);
+    padding: 0.4rem;
+}
+
+header .modeSwitch:hover {
+    background-color: var(--bg-reverse);
+    color: var(--text-reverse);
+}
+
+main {
+    background-color: var(--bg-secondary);
+    text-align: center;
+    padding: 6rem;
+}
+
+main my-slideshow {
+    display: flex;
+    justify-content: center;
+}
+
+main my-slideshow button {
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    background-color: var(--accent);
+    color: var(--text-secondary);
+    transition: 0.5s;
+    border: none;
+    border-radius: 2rem;
+}
+
+main my-slideshow button:hover {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+main section {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border: 10px;
+    border: solid;
+    border-color: var(--accent);
+    margin-bottom: 6rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+main .quote {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+main li {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer section {
+    text-align: left;
+}
+
+footer p {
+    margin: 1rem;
+    margin-left: 3rem;
+}
