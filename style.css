@@ -102,6 +102,33 @@ main section {
     padding: 1rem;
 }
 
+main section table, th, td {
+    border: 1px solid;
+}
+
+main section td {
+    padding: 5px;
+}
+
+main section details {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    margin: 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+main section details summary {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.firstrow td {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary)
+}
+
 main .quote {
     margin-top: 3rem;
     text-align: center;
